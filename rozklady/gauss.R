@@ -46,4 +46,8 @@ y <- sign(x)*floor(abs(x) / 3)
 plotECDF(x,y,"divide3")
 
 
+x <- c(-20,-16,-12,-10,-8,-5,-4,-3,-2,-1,0,1,2,3,4,5,8,10,12,16,20)
+y <- round(sign(x)*sqrt(abs(x)))
+plotECDF(x,y,"t_sqrt")
+
 
