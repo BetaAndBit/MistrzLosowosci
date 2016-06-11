@@ -1,6 +1,8 @@
+#
+# Plot ECDF with ggplot2
+
 library(ggplot2)
 library(ggthemes)
-
 
 plotECDF <- function(x, y, name=NA) {
   df <- data.frame(x,y)
@@ -13,7 +15,9 @@ plotECDF <- function(x, y, name=NA) {
 }
 
 
+#
 # Generate Distributions
+
 x <- 1:10
 y <- round(qnorm((1:10 -0.5)/10, sd = 6))
 plotECDF(x,y,"norm")
