@@ -32,3 +32,18 @@ y <- round(4*qlnorm((1:10 -0.5)/10))
 plotECDF(x,y,"lnorm")
 
 
+
+
+#
+# Generate Transformations
+
+x <- c(-20,-16,-12,-10,-8,-5,-4,-3,-2,-1,0,1,2,3,4,5,8,10,12,16,20)
+y <- sign(x)*floor(abs(x) / 2)
+plotECDF(x,y,"divide2")
+
+x <- c(-20,-16,-12,-10,-8,-5,-4,-3,-2,-1,0,1,2,3,4,5,8,10,12,16,20)
+y <- sign(x)*floor(abs(x) / 3)
+plotECDF(x,y,"divide3")
+
+
+
